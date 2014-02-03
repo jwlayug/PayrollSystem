@@ -1,0 +1,1015 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Payroll System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="_/css/bootstrap.css" rel="stylesheet">
+    <link href="_/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">PAYROLL SYSTEM</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="welcome.html">HOME</a></li>
+                    <li class=""><a href="#">PROFILE</a></li>
+                    <li class=""><a href="#">ESSENTIALS</a></li>
+                    <li class=""><a href="quickfile.html">QUICKFILE</a></li>
+                    <li class=""><a href="#">PAYROLL</a></li>
+                    <li class=""><a href="#">WORKGROUP</a></li>
+                    <li class=""><a href="#">HELP</a></li>
+                    <!--<li class=""><a href="#" style="text-decoration:underline">jwlayug</a></li>-->
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <div class="container">
+        <div class="welcome-content">
+            <div class="bs-example bs-example-tabs">
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active"><a href="#attendance" data-toggle="tab">Attendance</a></li>
+                    <li><a href="#approval" data-toggle="tab">Approval</a></li>
+                    <li><a href="#forms" data-toggle="tab">Forms</a></li>
+                    <!---<li><a href="#change" data-toggle="tab">Change Approver</a></li>-->
+                   <!--- <li><a href="#batch" data-toggle="tab">Batch Approve</a></li>-->
+                </ul>
+                <div class="data">
+                    <div class="table-responsive">
+                        <table class="table table-justified table-condensed qtable">
+                            <thead>
+                                <tr>
+                                    <td>Last name</td>
+                                    <td>First name</td>
+                                    <td>Middle name</td>
+                                    <td>Nickname</td>
+                                    <td>ID Number</td>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>Layug</td>
+                                <td>James Wilzen</td>
+                                <td>Magsombol</td>
+                                <td>James</td>
+                                <td>001</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="myTabContent" class="tab-content mytab-content">
+                    <hr />
+                    <div class="tab-pane fade in active" id="attendance">
+
+                        <div class="qhead ">
+                            WORK EXTENSION (WE)
+                          
+                        </div>
+                        <div class="qbody clearfix">
+                            <div class="col-md-6">
+
+                                <form role="form" class="">
+                                    <div class="form-group">
+                                        <label for="1">Application Date</label>
+                                        <input type="text" class="form-control" id="1" disabled value="01/01/14">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="2">Effective Date</label>
+                                        <input type="date" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">Start Time</label>
+                                        <input type="time" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">End Time</label>
+                                        <input type="time" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">Unpaid Break Time</label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="time" name="" id="input" class="form-control" value="" required="required" title="">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="time" name="" id="input" class="form-control" value="" required="required" title="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">Particulars</label>
+                                        <textarea cols="55" class="form-control"></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    The WORK EXTENSION form is an application to work outside your standard working hours or shift. It does not mean that OT
+                                    premium rates are automatically applied to the stated time range when the form is approved.
+                                </p>
+                                <p>
+                                    Upon your supervisor's approval, the system will make the final validation during payroll processing and apply
+                                    OT rates where applicable, depending on the business rules agreed upon with your HR Department.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="qhead ">
+                           OFFICIAL BUSINESS TRIP (OBT)
+
+                        </div>
+                        <div class="qbody clearfix">
+                            <div class="col-md-6">
+
+                                <form role="form" class="">
+                                    <div class="form-group">
+                                        <label for="1">Application Date</label>
+                                        <input type="text" class="form-control" id="1" disabled value="01/01/14">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>LOCAL</option>
+                                            <option>OFFSHORE TRAINING</option>
+                                        </select>
+                                    </div>
+                                    
+
+                                    <div class="form-group">
+                                        <label for="2">Start Date</label>
+                                        <input type="date" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">End Date</label>
+                                        <input type="date" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="2">Start Time</label>
+                                        <input type="time" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">End Time</label>
+                                        <input type="time" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">Particulars</label>
+                                        <textarea cols="55" class="form-control"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                   The official business trip (OBT) Form is used when you are unable to use the office time recorder due to official
+                                    activities outside of the office such as field work, training, and the like.
+                                </p>
+                                <p>
+                                    Time records must be encoded in pairs. Multiple OBT's per day is allowed.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="qhead ">
+                            OFFICIAL UNDERTIME OUT (OUT)
+
+                        </div>
+                        <div class="qbody clearfix">
+                            <div class="col-md-6">
+
+                                <form role="form" class="">
+                                    <div class="form-group">
+                                        <label for="1">Application Date</label>
+                                        <input type="text" class="form-control" id="1" disabled value="01/01/14">
+                                    </div>
+
+                                   
+
+                                    <div class="form-group">
+                                        <label for="2">Efective Date</label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="date" name="" id="input" class="form-control" value="" required="required" title="">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option>TIME IN</option>
+                                                        <option>TIME OUT</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">Particulars</label>
+                                        <textarea cols="55" class="form-control"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    The Official Undertime (OUT) Form is used in situations where your undertime may be excused due to late arrival of the company shuttle,
+                                    early knockoff due to typhoon, and other valid reasons.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="qhead ">
+                            FAILURE TO SWIPE (FTS)
+
+                        </div>
+                        <div class="qbody clearfix">
+                            <div class="col-md-6">
+
+                                <form role="form" class="">
+                                    <div class="form-group">
+                                        <label for="1">Application Date</label>
+                                        <input type="text" class="form-control" id="1" disabled value="01/01/14">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">Efective Date</label>
+                                       
+                                                <input type="date" name="" id="input" class="form-control" value="" required="required" title="">
+                                            
+                                           
+                                        
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">Time</label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="time" name="" id="input" class="form-control" value="" required="required" title="">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option>TIME IN</option>
+                                                        <option>TIME OUT</option>
+                                                        <option>BREAK IN</option>
+                                                        <option>BREAK OUT</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">Particulars</label>
+                                        <textarea cols="55" class="form-control"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    The failure to swipe (FTS) form is filed to complete a time pair arising from incomplete attendance transactions
+                                    (time-in or time-out). Situations include field activities, off-side training, defective time recorder, and others.
+                                    This form is monitored by HR and should be used judiciously.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="qhead ">
+                            CHANGE OF WORK SCHEDULE (CWS)
+
+                        </div>
+                        <div class="qbody clearfix">
+                            <div class="col-md-6">
+
+                                <form role="form" class="">
+                                    <div class="form-group">
+                                        <label for="1">Application Date</label>
+                                        <input type="text" class="form-control" id="1" disabled value="01/01/14">
+                                    </div>
+
+                                    
+
+                                    <div class="form-group">
+                                        <label for="2">Start Date</label>
+                                        <input type="date" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">End Date</label>
+                                        <input type="date" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">Shift Code</label>
+                                        <select class="form-control">
+                                            <option>09:00-18:00</option>
+                                            <option>9:30-18:30</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="2">Day Type</label>
+                                        <select class="form-control">
+                                            <option>REG</option>
+                                            <option>OFF</option>
+                                            <option>RES</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">Particulars</label>
+                                        <textarea cols="55" class="form-control"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    The Change of Work Schedule (CWS) Form is used override your original schedule as set by your Team Leader or by HR.
+                                    When approved the shift that you specify will be validated against your time records.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="qhead ">
+                            LEAVE OF ABSENCE (LOA)
+                            <div class="viewbalance pull-right">
+                                <a href="#" data-toggle="modal" data-target="#myModal"> Click to view leave balances <span class="glyphicon glyphicon-hand-up"></span> </a>
+                            </div>
+
+                        </div>
+                        <div class="qbody clearfix">
+                            <div class="col-md-6">
+
+                                <form role="form" class="">
+                                    <div class="form-group">
+                                        <label for="1">Application Date</label>
+                                        <input type="text" class="form-control" id="1" disabled value="01/01/14">
+                                    </div>
+
+                                 
+                                    <div class="form-group">
+                                        <label for="2">Leave Type</label>
+                                        <select class="form-control">
+                                            <option>VACATION LEAVE</option>
+                                            <option>--</option>
+                                            <option>--</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">Start Date</label>
+                                        <input type="date" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">End Date</label>
+                                        <input type="date" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="2">Start Time</label>
+                                        <input type="time" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">End Time</label>
+                                        <input type="time" name="" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="2">Reason</label>
+                                        <textarea cols="55" class="form-control"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+
+
+
+                              
+
+                                <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="modal-title" id="myModalLabel">Payroll Summary</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-justified table-striped qtable">
+                                                        <thead>
+                                                        <td>Leave Type</td>
+                                                        <td>Accured</td>
+                                                        <td>Alloted</td>
+                                                        <td>Earned</td>
+                                                        <td>Availed</td>
+                                                        <td>Balance</td>
+                                                        <td>Convertible</td>
+                                                        <td>Tax Exempt</td>
+                                                        <td>Unprocessed</td>
+                                                        <td>With Pay</td>
+                                                        <td>Without Pay</td>
+                                                        </thead>
+                                                        <tr>
+                                                            <td>Vacation leave</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sick leave</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Maternity leave</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Paternity leave</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>SSS Sick leave</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Bereavement leave</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Birthday leave</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+
+
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+
+                                        </div><!-- /.modal-content -->
+                                    </div><!-- /.modal-dialog -->
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    The Leave of Absence Authorization (LOA) form is an application to be absent for the given date range. Without this
+                                     form, you will be marked as absent without leave (AWOL) if the system encounters an incomplete, missing, or
+                                     incorrect raw time pair.
+                                </p>
+                                <p>
+                                    Upon your supervisor's approval, the system will make the final validation during payroll processing and,
+                                     depending on your available leave balances, charge it to the appropriate leave or tag it as Leave Without Pay (LWOP).
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="approval">
+                        
+
+                        <div class="qforms clearfix">
+                            <form role="form" class="aform">
+
+
+
+
+
+                                <div class="form-group">
+                                    <div class="col-md-2">
+                                        <label for="2">Form Type</label>
+                                        <select class="form-control">
+                                            <option>--</option>
+                                            <option>--</option>
+                                            <option>--</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-2">
+                                        <label for="2">Action</label>
+                                        <select class="form-control">
+                                            <option>--</option>
+                                            <option>--</option>
+                                            <option>--</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <div class="col-md-5">
+                                        <label for="2">Date Range</label>
+                                        <div class="input-group">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <div class="input-group-btn">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <input type="date" class="form-control" value="" />
+                                                                    <p class="btn">to</p>
+                                                                </div>
+                                                                <div class="col-md-6 col-push-1">
+                                                                    <input type="date" class="form-control" value="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <div class="col-md-3">
+                                        <label for="2">Types of Search</label><br />
+                                        <button type="submit" class="btn btn-default">Search</button>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs">T</button>
+                                            <button class="btn btn-xs">W</button>
+                                            <button class="btn btn-xs">M</button>
+                                            <button class="btn btn-xs">P</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </form>
+
+                            <div class="clearfix"></div>
+
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="data-2">
+                                        <table class="table table-justified table-condensed table-striped table-hover qtable">
+                                            <thead>
+                                                <tr>
+                                                    <td>Employee</td>
+                                                    <td>Effective Date</td>
+                                                    <td>Type</td>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+                                                <td>Layug James Wilzen</td>
+                                                <td>01/01/14</td>
+                                                <td>OUT</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Layug James Wilzen</td>
+                                                <td>01/01/14</td>
+                                                <td>OUT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Layug James Wilzen</td>
+                                                <td>01/01/14</td>
+                                                <td>OUT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Layug James Wilzen</td>
+                                                <td>01/01/14</td>
+                                                <td>OUT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Layug James Wilzen</td>
+                                                <td>01/01/14</td>
+                                                <td>OUT</td>
+                                            <tr>
+                                                <td>Layug James Wilzen</td>
+                                                <td>01/01/14</td>
+                                                <td>OUT</td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="get">
+                                        <form role="form" class="">
+                                            <div class="form-group">
+                                                <label for="1">Reference</label>
+                                                <input type="text" class="form-control" id="1" disabled value="001">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="1">Employee</label>
+                                                <input type="text" class="form-control" id="1" disabled value="Layug James Wilzen">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="1">Date Filed</label>
+                                                <input type="text" class="form-control" id="1" disabled value="01/01/14">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="1">Form Type</label>
+                                                <input type="text" class="form-control" id="1" disabled value="OB">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="1">Effective Date</label>
+                                                <input type="text" class="form-control" id="1" disabled value="01/01/14">
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label for="1">Time In</label>
+                                                <input type="text" class="form-control" id="1" disabled value="13:00">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="1">Time Out</label>
+                                                <input type="text" class="form-control" id="1" disabled value="15:00">
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label for="1">Particulars</label>
+                                                <input type="text" class="form-control" id="1" disabled value="My Payroll Training">
+                                            </div>
+
+
+
+
+
+
+                                            <div class="form-group">
+                                                <label for="2">Reason</label>
+                                                <textarea cols="55" class="form-control"></textarea>
+                                            </div>
+
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+                        </div>
+                    <div class="tab-pane fade" id="forms">
+                        
+                        <div class="qforms clearfix">
+                            <form role="form" class="aform">
+                               
+
+                               
+
+                                <div class="form-group">
+                                    <div class="col-md-4">
+                                        <label for="2">Form Type</label>
+                                        <select class="form-control">
+                                            <option>--</option>
+                                            <option>--</option>
+                                            <option>--</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <div class="col-md-5">
+                                        <label for="2">Date Range</label>
+                                        <div class="input-group">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <div class="input-group-btn">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <input type="date" class="form-control" value="" />
+                                                                    <p class="btn">to</p>
+                                                                </div>
+                                                                <div class="col-md-6 col-push-1">
+                                                                    <input type="date" class="form-control" value="" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <div class="col-md-3">
+                                        <label for="2">Types of Search</label><br />
+                                        <button type="submit" class="btn btn-default">Search</button>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs">T</button>
+                                            <button class="btn btn-xs">W</button>
+                                            <button class="btn btn-xs">M</button>
+                                            <button class="btn btn-xs">P</button>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+
+
+
+                                
+                            </form>
+
+                            <div class="clearfix"></div>
+
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                <div class="data-2">
+                                    <table class="table table-justified table-condensed table-striped table-hover qtable">
+                                        <thead>
+                                            <tr>
+                                                <td>Effective Date</td>
+                                                <td>Type</td>
+                                                <td>Status</td>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>01/01/14</td>
+                                            <td>OUT</td>
+                                            <td>Pending</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>01/01/14</td>
+                                            <td>OUT</td>
+                                            <td>Pending</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>01/01/14</td>
+                                            <td>OUT</td>
+                                            <td>Pending</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>01/01/14</td>
+                                            <td>OUT</td>
+                                            <td>Pending</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>01/01/14</td>
+                                            <td>OUT</td>
+                                            <td>Pending</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="get">
+                                        <form role="form" class="">
+                                            <div class="form-group">
+                                                <label for="1">Reference</label>
+                                                <input type="text" class="form-control" id="1" disabled value="001">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="1">Date Filed</label>
+                                                <input type="text" class="form-control" id="1" disabled value="01/01/14">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="1">Form Type</label>
+                                                <input type="text" class="form-control" id="1" disabled value="OB">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="1">Details</label>
+                                                <input type="text" class="form-control" id="1" disabled value="01/01/14 | 1 day | 08:00 - 17:00">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="1">Particulars</label>
+                                                <input type="text" class="form-control" id="1" disabled value="My Payroll Training">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="1">Date Approved</label>
+                                                <input type="text" class="form-control" id="1" disabled value="01/01/14">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="1">Date Time</label>
+                                                <input type="text" class="form-control" id="1" disabled value="13:00">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="1">Reason</label>
+                                                <input type="text" class="form-control" id="1" disabled value="Reason">
+                                            </div>
+
+
+                                            
+
+                                            <div class="form-group">
+                                                <label for="2">Reason to Cancel</label>
+                                                <textarea cols="55" class="form-control"></textarea>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="submit" class="btn btn-primary">Approve</button>
+                                                <button type="submit" class="btn btn-primary">Disapprove</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                           
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+
+
+                    <div class="tab-pane fade" id="change">
+                        <p>4</p>
+                    </div>
+                    <div class="tab-pane fade" id="batch">
+                        <p>5</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="_/js/bootstrap.js"></script>
+    <script src="_/js/main.js"></script>
+    <script type="text/javascript">
+
+    </script>
+
+</body>
+</html>

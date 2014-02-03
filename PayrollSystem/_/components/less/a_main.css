@@ -1,0 +1,46 @@
+body {
+  background-color: #20acc1;
+}
+.navbar {
+  background-color: #455660;
+  border-radius: 0px;
+  border: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+.login {
+  position: relative;
+}
+.login .login-content {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.myForm {
+  margin: 20px;
+}
+.forgot {
+  padding: 5px;
+  text-decoration: underline;
+}
+#calendar {
+  background-color: #fff;
+  margin: 1px;
+  padding: 5px;
+  color: #455660;
+}
+.welcome-content {
+  background-color: #fff;
+  margin-top: -18px;
+}
+.account-info {
+  height: 300px;
+  margin: 1px;
+}
+.greet {
+  background-color: #657e8d;
+  color: #fff;
+  padding: 5px;
+}
+.announcements {
+  background-color: #cc0000;
+}

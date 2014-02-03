@@ -1,0 +1,182 @@
+//---- Cuscapi Colors
+@import url("mixins.less");
+@darkblue:#455660;
+@blue:#20ACC1;
+
+
+body{
+	background-color:lighten(@darkblue,5%);
+}
+.btn-primary{
+    background-color:@blue;
+    border-color:lighten(@darkblue,15%);
+    &:hover{
+        background-color:lighten(@darkblue,5%);
+        border-color:lighten(@darkblue,15%);
+    }
+}
+
+.navbar{
+	background-color: @darkblue;
+	border-radius:0px;
+	border:none;
+	text-shadow:none;
+	box-shadow: none;
+}
+.login{
+	position:relative;
+	.login-content{
+		background-color: #fff;
+		border-radius: 10px;	
+		
+	box-shadow:1px 1px 1px @darkblue;	
+	}
+}
+.myForm{
+	margin:20px;
+    
+}
+.forgot{
+	padding:5px;
+	text-decoration: underline;
+}
+
+#calendar{
+	background-color: #fff;
+	margin:1px;
+	padding:5px;
+	color:@darkblue;
+}
+.welcome-content{
+	background-color: #fff;
+	margin-top: -18px;
+    padding-bottom:10px;   
+    box-shadow:1px 1px 1px #666;
+}
+
+.account-info{
+
+	// border:1px solid @darkblue;
+	
+	margin:1px;
+    border-left:1px solid #ccc;
+    
+}
+.greet{
+	background-color: lighten(@darkblue,15%);
+	color:#fff;
+	padding:5px;
+}
+.announcements{
+	background-color: darken(red,15%);
+}
+
+.greets{
+    width:auto;
+    margin:1px;
+    
+    color:#fff;
+    text-decoration:underline;
+    padding:5px;
+}
+.ap{
+   max-width:80%; 
+   margin-left:14px;
+}
+
+.mynav{
+     background-color:rgba(255,255,255,.6);
+    
+    li{
+        a{
+            color:darken(@blue,10%);
+        }
+        
+       
+    }
+}
+.fc-state-highlight {
+    
+    border-color:@blue;
+    color:darken(@blue,50%);
+    background-color:lighten(@blue,50%);
+    
+}
+.vital-info{
+    background-color:lighten(@darkblue,15%);
+    padding:5px;
+    color:#fff;
+}
+.mytable {
+    tr {
+        td {
+            padding: 5px;
+            &:nth-child(2){
+                color:darken(@blue,15%);
+            }
+        }
+        
+    }
+}
+
+.tab-content{
+    position:relative;
+    
+    padding:5px;
+}
+.nav-tabs{
+    
+    li{
+        a{
+            color:@darkblue;
+        }
+    }
+}
+.data{
+    position:relative;
+    padding:5px;
+}
+.qtable{
+    >thead{
+        background-color:@darkblue;
+        color:#fff;
+    }
+}
+.qhead{
+    background-color:@darkblue;
+    padding:5px;
+    color:#fff;
+}
+.qbody{
+    position:relative;
+    padding:5px;
+    background-color:#fff;
+    color:@darkblue;
+    border:2px 0px solid @darkblue;
+    
+}
+.viewbalance > a{
+    color:#fff;
+}
+.modal-dialog{
+    width:95%;
+}
+.data-2{
+    position:relative;
+    margin-top:5px;
+}
+
+.table-hover{
+    >tbody>tr>td{
+        cursor:pointer;
+    }
+    
+}
+
+.get{
+    border-left:1px solid #ccc;
+    color:darken(@darkblue,5%);
+    padding:15px;
+    margin-top:5px;
+    
+}
